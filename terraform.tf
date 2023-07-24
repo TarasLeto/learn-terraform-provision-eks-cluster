@@ -2,13 +2,14 @@
 # SPDX-License-Identifier: MPL-2.0
 
 terraform {
-
+    backend "remote" {
+      organization = "TaraOrg"
   cloud {
     workspaces {
       name = "learn-terraform-eks"
     }
   }
-
+    }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
