@@ -6,7 +6,7 @@ terraform {
       organization = "TaraOrg"
   cloud {
     workspaces {
-      name = "learn-terraform-eks"
+      name = "learn-terraform-provision-eks-cluster"
     }
   }
     }
